@@ -80,8 +80,11 @@ public class MainActivity extends AppCompatActivity {
         String versionSO = Build.VERSION.RELEASE;
         versionSDK = Build.VERSION.SDK_INT;
         versionAndroid.setText(versionSO + "-" + versionSDK);
+        changeBtBT();
         checkConnection();
     }
+
+
 
     private void beginning() {
         this.versionAndroid = findViewById(R.id.tvAndroidVersion);
@@ -138,15 +141,18 @@ public class MainActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this.activity,new String[]{Manifest.permission.BLUETOOTH_CONNECT}, REQUEST_BT_CODE);
             Log.i("Bluetooth Permission","I have access to external storage");
     }
+    private void changeBtBT(){
+        if(bluetoothAdapter.isEnabled()){
+            btBluetooth.setText("Activado");
+            btBluetooth.setEnabled(false);
+        }
+    }
     private void onBluetoothOn(View view) {
         if(ActivityCompat.checkSelfPermission(this, android.Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
             if (!bluetoothAdapter.isEnabled()) {
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivity(enableBtIntent, null);
-            }
-            if(bluetoothAdapter.isEnabled()){
-                btBluetooth.setText("Activado");
-                btBluetooth.setEnabled(false);
+                changeBtBT();
             }
         }
         else{
