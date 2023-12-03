@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingHorizontal="40dp"
     tools:context=".MainActivity">
 
 
@@ -101,7 +100,7 @@
             android:text="@string/tvState" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/tvConection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tvStateConexion" />
