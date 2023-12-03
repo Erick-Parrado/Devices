@@ -104,5 +104,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tvStateConexion" />
+
+        <TextView
+            android:id="@+id/tvBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvBluetooth" />
+
+        <Button
+            android:id="@+id/btBluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btBluetooth" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

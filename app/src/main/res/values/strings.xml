@@ -13,4 +13,6 @@
     <string name="ibSaveFile">Save</string>
     <string name="tvState">5. Conection:</string>
     <string name="tvStateConexion"></string>
+    <string name="tvBluetooth">6. Bluetooth</string>
+    <string name="btBluetooth">Active</string>
 </resources>
