@@ -74,20 +74,20 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/tvStorge"
+            android:id="@+id/tvFile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tvStorage" />
 
-        <TextView
-            android:id="@+id/etStorage"
+        <EditText
+            android:id="@+id/etFile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:hint="@string/etNameFile" />
 
         <ImageButton
-            android:id="@+id/ibStorage"
+            android:id="@+id/ibFile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@android:drawable/ic_input_add"
